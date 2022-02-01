@@ -4,4 +4,3 @@ estudar pipeline
 
 ver fetchvm no js
 
-Async
