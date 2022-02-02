@@ -1,1 +1,6 @@
 92827992
+
+estudar pipeline
+
+ver fetchvm no js
+

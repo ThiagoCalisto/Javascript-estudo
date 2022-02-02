@@ -40,4 +40,15 @@ if (alturaValida && pesoValido){
 
 
 
+// =======
+
+// let imc = peso / (altura * altura);
+
+
+
+// console.log(altura)
+// console.log(peso)
+
+// tdImc.textContent = imc;
+// >>>>>>> b76815d42b9529db9f9fd7f0ed31f7e15a1ee3ef
 
