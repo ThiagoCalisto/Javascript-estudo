@@ -4,13 +4,19 @@ let titulo = document.querySelector(".titulo");
 
 titulo.textContent = "banana";
 
+let pacientes = document.querySelectorAll(".paciente");
+
 /* let first = document.querySelector("#first"); */
 
 
-let altura = first.querySelector(".info-altura").textContent;
-let peso = first.querySelector(".info-peso").textContent;
+for(let i = 0; i < pacientes.length ; i++){
 
-let tdImc = first.querySelector(".info-imc");
+    var paciente = pacientes[i];
+
+let altura = paciente.querySelector(".info-altura").textContent;
+let peso = paciente.querySelector(".info-peso").textContent;
+
+let tdImc = paciente.querySelector(".info-imc");
 
 let pesoValido = true;
 let alturaValida = true;
@@ -35,7 +41,7 @@ if (alturaValida && pesoValido){
     console.log(peso)
 
     tdImc.textContent = imc;
-
+}
 }
 
 
