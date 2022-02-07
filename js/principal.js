@@ -1,5 +1,7 @@
 console.log("sucess load")
 
+let botaoadicionar = document.querySelector("#adicionar-paciente")
+
 let titulo = document.querySelector(".titulo");
 
 titulo.textContent = "banana";
@@ -25,12 +27,14 @@ if (peso < 0 || peso > 1000){
     console.log("Peso invalido!");
     pesoValido = false
     tdImc.textContent = "Peso invalido!";
+    paciente.style.backgroundColor = "lightcoral";
 }
 
 if (altura < 0 || altura > 3.00){
     console.log("Altura invalida!");
     alturaValida = false;
     tdImc.textContent = "Altura invalida!";
+    paciente.style.backgroundColor = "lightcoral";
 }
 
 if (alturaValida && pesoValido){
@@ -42,6 +46,21 @@ if (alturaValida && pesoValido){
 
     tdImc.textContent = imc;
 }
+}
+
+console.log(botaoadicionar)
+
+botaoadicionar.addEventListener("click", function(){
+    alert("sei la mano");
+})
+
+titulo.addEventListener("click", mostrarMenssage)
+
+
+
+
+function mostrarMenssage(){
+     alert("ola eu fui clicado");
 }
 
 
