@@ -4,7 +4,7 @@ let botaoadicionar = document.querySelector("#adicionar-paciente")
 
 let titulo = document.querySelector(".titulo");
 
-titulo.textContent = "banana";
+titulo.textContent = "FDP";
 
 let pacientes = document.querySelectorAll(".paciente");
 
@@ -45,13 +45,15 @@ if (alturaValida && pesoValido){
     console.log(peso)
 
     tdImc.textContent = imc;
+    tdImc.textContent = imc.toFixed(2);
 }
 }
 
 console.log(botaoadicionar)
 
-botaoadicionar.addEventListener("click", function(){
-    alert("sei la mano");
+botaoadicionar.addEventListener("click", function(event){
+    event.preventDefault();
+    console.log("Jamo tunto")
 })
 
 titulo.addEventListener("click", mostrarMenssage)
